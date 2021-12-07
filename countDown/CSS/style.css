@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Roboto:wght@500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+   background-color: burlywood;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color:#232F3E; 
+  height: 52px;
+  position: sticky;
+  top:0;
+}
+.navbar h3 {
+  margin-left: 25px;
+  cursor: pointer;
+  color: cornsilk;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+}
+.navbar ul {
+  display: flex;
+  margin-left: 30px;
+  align-items: center;
+  width: 100%;
+  
+}
+.navbar ul li {
+  list-style: none;
+  margin-right: 28px;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 600;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: cornsilk;
+}
+.navbar ul li a:hover{
+  color:#EAEDED;
+  
+}
+.rightSection {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 15px;
+}
+.rightSection input[type="text"] {
+  padding: 9px;
+  border: none;
+  border-radius: 3px;
+  width: 250px;
+}
+.rightSection button {
+  margin-left: 10px;
+  padding: 9px 17px 9px 17px;
+  background-color: #232F3F;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.rightSection input[type="text"]:hover {
+  outline: none;
+}
+.rightSection button:hover {
+  color: black;
+
+  background-color: white;
+}
+section {
+  width: 29vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  height: 450px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.container h2 {
+  font-family: 'Acme', sans-serif;
+font-family: 'Roboto', sans-serif;
+  font-size:1.8em; 
+}
+.displayTime {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  height: 30px;
+  margin-top: 50px;
+}
+.days,
+.hours,
+.minutes,
+.seconds {
+  height: 65px;
+  width: 68px;
+  background-color: #232F3E;
+  text-align: center;
+  font-size: 3.3em;
+  border-radius:2px;
+  color:#F3A847;
+}
+.colon{
+  font-size: 3.1em;
+  color:honeydew;
+  /* margin: 0; */
+}
