@@ -1,0 +1,5 @@
+In this small, I've learnt lot of things, such as position:fixed, which can be used to position footer with ease. By using:
+position:fixed;
+bottom:0;(don't set height)
+
+position fixed also helps a div to increase the size of container and can be used to increase the height and width of any div by covering entire html page which is quite useful.
