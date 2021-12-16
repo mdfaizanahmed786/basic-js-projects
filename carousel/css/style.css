@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --bgColor:lightblue;
+}
+body{
+    background-color:var(--bgColor);
+  }
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color:cornsilk;
+  height: 52px;
+  position: sticky;
+  top: 0;
+  box-shadow: lightgray;
+}
+.navbar h3 {
+  margin-left: 25px;
+  cursor: pointer;
+  color: blueviolet;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+}
+.navbar ul {
+  display: flex;
+  margin-left: 30px;
+  align-items: center;
+  width: 100%;
+}
+.navbar ul li {
+  list-style: none;
+  margin-right: 28px;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 600;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: blueviolet;
+}
+.navbar ul li a:hover {
+  color: #eaeded;
+}
+
+
+
+.slide-container{
+  position:relative;
+  left:35%;
+  top:150px;
+  /* background-color: blue;  */
+  width:29%;
+  overflow: hidden;
+  height:45vh;
+
+}
+.slide{
+  position: absolute;
+  width:100%;
+  transition:all 0.2s ease-in-out;
+
+}
+
+.slide img{
+  height:300px;
+  object-fit: cover;
+  
+}
+
+.btnContainer{
+  
+  display: flex;
+  justify-content: center;
+  margin-top:20vh;
+  
+}
+.btnContainer button{
+  background: none;
+  border:none;
+  margin:0px 10px;
+  cursor:pointer;
+  font-weight: 500;
+  font-size: x-large;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+/* Remember this style of nth child
+.slide:nth-child(1){
+  left:0%;
+}.slide:nth-child(2){
+  left:100%;
+}.slide:nth-child(3){
+  left:200%;
+}.slide:nth-child(4){
+  left:300%;
+} */
+
+
+
+

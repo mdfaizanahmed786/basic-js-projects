@@ -1,0 +1,4 @@
+Here in this tutorial, I've understood more about transform property. How transform works. It totally depends on X-axis in this project, about what axis we are translating images. So as transition property in this project.
+transformX allows to translate a div in positive direction and if we reduce that in positive value it also reduces the position of div.
+
+In negaitive diection of X, it moves along positive x axis. 
