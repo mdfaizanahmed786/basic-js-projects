@@ -80,7 +80,7 @@ body {
   z-index: -10;
   height: 100%;
   width: 100%;
-  background-color: rgba(0,0,0,.0002);
+  background-color: rgba(73, 166, 233, 0.5);
 
 
   place-items: center;
