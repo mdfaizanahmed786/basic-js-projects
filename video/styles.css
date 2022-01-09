@@ -106,13 +106,10 @@ nav ul li {
   }
   .menuItem {
     display: flex;
-    position: relative;
-    left: 78%;
-    flex-direction: column;
+    position: absolute;
+    right:15px;
     justify-content: flex-end;
-    align-items: center;
     cursor: pointer;
-    width: auto;
     height: 20px;
   }
   .menuItem span {
@@ -129,10 +126,6 @@ nav ul li {
   }
   .line-3 {
     transform: translateY(10px);
-  }
-  .menuItem:active {
-    background-color: rgba(128, 128, 128, 0.39);
-    border-radius: 2px solid;
   }
 
   .visibleMenu {
