@@ -8,4 +8,5 @@ const menuItems=document.querySelector('.items');
 
 menuItem.addEventListener('click', ()=>{
 menuItems.classList.toggle('visibleMenu')
+menuItem.classList.toggle("animateMenu");
 })

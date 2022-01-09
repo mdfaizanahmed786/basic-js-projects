@@ -11,6 +11,13 @@
 body {
   font-family: var(--fontfam);
 }
+video::-webkit-media-controls {
+  visibility: hidden;
+}
+
+video::-webkit-media-controls-enclosure {
+  visibility: visible;
+}
 
 header {
   position: relative;
@@ -83,12 +90,7 @@ nav ul li {
   font-size: 2rem;
 }
 
-
 @media all and (max-width: 600px) {
-  header video {
-    left: 45%;
-  }
-
   nav ul {
     visibility: hidden;
     position: absolute;
@@ -100,34 +102,54 @@ nav ul li {
     transform: translateY(-148px);
     transition: transform 0.7s ease-out;
     width: 100%;
+    justify-content: center;
   }
   .menuItem {
     display: flex;
-    position: absolute;
-    right: 15px;
+    position: relative;
+    left: 78%;
     flex-direction: column;
     justify-content: flex-end;
-    gap: 5px;
+    align-items: center;
     cursor: pointer;
     width: auto;
     height: 20px;
   }
   .menuItem span {
+    position: absolute;
+    bottom: 7px;
     background-color: black;
     width: 30px;
     height: 4px;
+    transition: transform 0.5s, width 0.5s;
+  }
+  /* Added an animated hamburger menu bar */
+  .line-1 {
+    transform: translateY(-10px);
+  }
+  .line-3 {
+    transform: translateY(10px);
   }
   .menuItem:active {
     background-color: rgba(128, 128, 128, 0.39);
     border-radius: 2px solid;
   }
-  
-.visibleMenu {
-  visibility: visible;
-  transform: translateY(148px);
-  transition: transform 0.5s ease-in;
-  z-index: -2;
-}
+
+  .visibleMenu {
+    visibility: visible;
+    transform: translateY(148px);
+    transition: transform 0.4s ease-in;
+    z-index: -2;
+  }
+  .animateMenu .line-1 {
+    transform: rotate(-45deg);
+  }
+  .animateMenu .line-2 {
+    width: 0;
+  }
+  .animateMenu .line-3 {
+    transform: rotate(45deg);
+  }
 }
 
 @media all and (max-width: 503px) {
