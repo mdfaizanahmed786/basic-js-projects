@@ -1,0 +1,26 @@
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.container {
+  background: #333;
+  padding: 1rem;
+  width: 100%;
+  border: 2px solid black;
+}
+.container p {
+  background-color: white;
+  padding: 1rem;
+  border: 1px solid black;
+  width: inherit;
+  cursor: move;
+  
+}
+.dragging{
+    /* opacity:.5; */
+    background-color: aqua;
+}
