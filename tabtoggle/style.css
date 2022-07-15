@@ -1,0 +1,50 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.tab-links{
+  display: flex;
+  gap:10px;
+  justify-content: space-around;
+  }
+
+.tab-links p{
+cursor: pointer;
+transition:all 0.5s;
+position:relative;
+}
+
+.tab-links p:hover{
+ color:green;
+}
+
+.tab-links p::after{
+  content:"";
+  background:purple;
+  width:0px;
+  height:3px;
+  position:absolute;
+  bottom:-6px;
+  left:-5px;
+  transition:all 0.5s;
+}
+
+/* .tab-links p:hover::after{ls
+
+  width: 60px;
+
+} */
+.tab-links p.active::after{
+  width:60px;
+}
+
+
+
+
+.tabs{
+  display:none;
+}
+.tabs.active-tab{
+  display: block;
+}
